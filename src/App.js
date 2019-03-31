@@ -1,20 +1,22 @@
 import React, { Component } from "react";
 import "./App.scss";
 import { Route } from "react-router-dom";
-import { Switch } from "react-router";
+import { Switch, withRouter } from "react-router";
 
 import Box from "./containers/Box";
+import CustomText from "./containers/CustomText";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <Switch>
-          <Route component={Box} path="/" />
+          <Route component={Box} path="/" exact />
+          <Route component={CustomText} path="/custom-text" />
         </Switch>
       </div>
     );
   }
 }
 
-export default App;
+export default withRouter(App);

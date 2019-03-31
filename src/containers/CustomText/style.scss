@@ -1,0 +1,15 @@
+.custom-text {
+  &__container {
+    width: 400px;
+    margin: 100px auto 0;
+    background-color: #674172;
+    padding: 30px;
+  }
+  &__text-edit {
+    min-height: 100px;
+    background-color: #dcc6e0;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 15px;
+  }
+}
